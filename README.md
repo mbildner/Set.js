@@ -23,7 +23,7 @@ Creating a set
 
 var furnitureSet = new Set(['chair', 'couch', 'table', 'table', 'table']);
 
-var foodSet = new Set('fish', 'chicken', 'carrot', 'carrot', 'carrot']);
+var foodSet = new Set(['fish', 'chicken', 'carrot', 'carrot', 'carrot']);
 
 ```
 Get the values back out
@@ -34,9 +34,9 @@ Get the values back out
 // set members are returned in an arbitrary order,
 // do not expect them to come out in the order you put them in
 
-console.log(furnitureSet.members()) // 'chair', 'couch', 'table'
+console.log(furnitureSet.members()); // 'chair', 'couch', 'table'
 
-console.log(foodSet.members()) // 'fish', 'chicken', 'carrot'
+console.log(foodSet.members()); // 'fish', 'chicken', 'carrot'
 
 ```
 
@@ -59,8 +59,8 @@ Add a member
 furnitureSet.add('door');
 foodSet.add('broken glass');
 
-console.log(furnitureSet.members()) // 'chair', 'couch', 'table', 'door'
-console.log(foodSet.members()) // 'fish', 'chicken', 'carrot', 'broken glass'
+console.log(furnitureSet.members()); // 'chair', 'couch', 'table', 'door'
+console.log(foodSet.members()); // 'fish', 'chicken', 'carrot', 'broken glass'
 
 ```
 
@@ -70,7 +70,7 @@ Remove a member
 ```JavaScript
 
 foodSet.remove('broken glass');
-console.log(foodSet.members()) // 'fish', 'chicken', 'carrot'
+console.log(foodSet.members()); // 'fish', 'chicken', 'carrot'
 
 
 ```
@@ -83,7 +83,7 @@ Get a random member
 var randomFood = foodSet.random();
 
 console.log(randomFood); // 'chicken'
-console.log(foodSet.members()) // 'fish', 'chicken', 'carrot'
+console.log(foodSet.members()); // 'fish', 'chicken', 'carrot'
 
 ```
 
@@ -95,7 +95,7 @@ Pop a random member
 var randomFood = foodSet.random();
 
 console.log(randomFood); // 'chicken'
-console.log(foodSet.members()) // 'fish', 'carrot'
+console.log(foodSet.members()); // 'fish', 'carrot'
 
 ```
 
